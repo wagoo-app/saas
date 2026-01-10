@@ -1,0 +1,43 @@
+name: Report a Bug
+description: Report a bug to help us improve
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - "bug"
+        - "feature"
+        - "enhancement"
+        - "docs"
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - "Low"
+        - "Medium"
+        - "High"
+        - "Critical"
+    validations:
+      required: false
+  - type: dropdown
+    id: assignee
+    attributes:
+      label: Assigner à
+      description: Qui doit être assigné à cette issue ?
+      options:
+        - "leo-lb29"
+        - "Personne (à assigner manuellement)"
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Description
+      placeholder: Describe the issue
+    validations:
+      required: false
+
