@@ -1,6 +1,5 @@
 name: Report a Bug
 description: Report a bug to help us improve
-labels: ["bug"]
 body:
   - type: dropdown
     id: type
