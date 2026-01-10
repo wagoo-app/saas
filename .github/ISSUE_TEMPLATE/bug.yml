@@ -24,20 +24,9 @@ body:
         - "Critical"
     validations:
       required: false
-  - type: dropdown
-    id: assignee
-    attributes:
-      label: Assigner à
-      description: Qui doit être assigné à cette issue ?
-      options:
-        - "leo-lb29"
-        - "Personne (à assigner manuellement)"
-    validations:
-      required: false
   - type: textarea
     attributes:
       label: Description
       placeholder: Describe the issue
     validations:
       required: false
-
